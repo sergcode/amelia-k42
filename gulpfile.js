@@ -1,5 +1,5 @@
 const gulp = require('gulp')
-const sass = require('gulp-sass')
+const sass = require('gulp-sass')(require('sass'))
 const debug = require('gulp-debug')
 const sourceMaps = require('gulp-sourcemaps')
 const clean = require('gulp-clean')
@@ -18,6 +18,7 @@ const webPack = require('webpack')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const rename = require('gulp-rename')
 const cache = require('gulp-cached')
+const replace = require('gulp-replace')
 // const isDebug = process.env.NODE_ENV === 'debug'
 
 function sassCompile() {
@@ -26,9 +27,7 @@ function sassCompile() {
       .pipe(sass({
         includePaths: ['node_modules']
       })).on('error', notify.onError())
-      .pipe(rename({
-        suffix: '.min'
-      }))
+      .pipe(sourceMaps.write("../css"))
       .pipe(gulp.dest('./public/assets/css/')).pipe(debug())
 }
 
@@ -101,6 +100,9 @@ function jsCompress() {
           new UglifyJsPlugin()
         ],
       })).on('error', notify.onError())
+      .pipe(rename({
+        suffix: '.min'
+      }))
       .pipe(gulp.dest('./public/assets/js/'))
       .pipe(debug())
 }
@@ -154,6 +156,15 @@ function pugCompress() {
       .pipe(debug())
 }
 
+function deployHtml() {
+  return gulp.src(['./public/*.html'])
+      .pipe(replace('.css', '.min.css'))
+      .pipe(replace('.min.min.css', '.min.css'))
+      .pipe(replace('.js', '.min.js'))
+      .pipe(replace('.min.min.js', '.min.js'))
+      .pipe(gulp.dest('public/'));
+}
+
 function watch() {
   browserSync.init({
     server: 'public'
@@ -198,6 +209,8 @@ gulp.task('pug:compressor', pugCompress);
 
 gulp.task('clean', cleanDirectory);
 
+gulp.task('deploy-html', deployHtml);
+
 gulp.task('watch', watch);
 
 gulp.task('collectDev', gulp.series(cleanDirectory, gulp.parallel(sassCompile, img, fonts, js, pugFiles, docs, files)));
@@ -206,7 +219,7 @@ gulp.task('collectBuild', gulp.series(cleanDirectory, gulp.parallel(sassCompress
 
 gulp.task('dev', gulp.series('collectDev', 'watch'))
 
-gulp.task('build', gulp.series('collectBuild', 'watch'))
+gulp.task('build', gulp.series('collectBuild', 'deploy-html'))
 
 
 
