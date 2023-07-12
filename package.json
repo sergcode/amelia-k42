@@ -46,6 +46,6 @@
   },
   "author": "Sergey Shakhvorostov",
   "license": "ISC",
-  "repository": "https://gitlab.com/Rustransfer24/amelia.git",
+  "repository": "https://github.com/sergcode/amelia-k42.git",
   "private": true
 }
