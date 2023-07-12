@@ -3,12 +3,17 @@
 }
 
 body {
-
   overflow-x: hidden !important;
   position: relative;
-  background-color: $black-one;
+  background-color: $grey-four;
   font-family: $verdana-font;
   font-weight: normal;
+
+  &.modal-open {
+    .header__wrapper {
+      padding-right: 17px;
+    }
+  }
 
 }
 

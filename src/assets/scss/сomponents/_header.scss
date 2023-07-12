@@ -71,8 +71,6 @@
     box-shadow: 0 2px 3px 0 transparent;
     &.scrolling-navbar {
       &.top-nav-collapse {
-        box-shadow: 0 2px 3px 0 $black-rgba-four;
-
         .header__white {
           transition: margin-top .2s ease-in-out;
           margin-top: -100px;
@@ -359,6 +357,7 @@
 
   &__green {
     background: $green-one;
+    box-shadow: 0 2px 3px 0 $black-rgba-four;
     @media only screen and (min-width: 1024px) {
       position: relative;
       overflow: hidden;
@@ -468,7 +467,7 @@
             margin-right: 0;
           }
 
-          a {
+          a, a:not([href]):not([class]) {
             color: $white-one;
             text-decoration: none;
             padding: 15px;
