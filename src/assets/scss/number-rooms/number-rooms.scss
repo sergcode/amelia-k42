@@ -1,0 +1,354 @@
+.number-rooms {
+  position: relative;
+  background: $white-one;
+  padding-top: 0;
+  padding-bottom: 0;
+  &__carousel {
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    @media only screen and (min-width: 280px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    @media only screen and (min-width: 992px) {
+      flex: 0 0 83.33333%;
+      max-width: 83.33333%;
+    }
+    @media only screen and (min-width: 1024px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    @media only screen and (min-width: 1600px) {
+      flex: 0 0 56.7%;
+      max-width: 56.7%;
+    }
+  }
+  &__carousel-info {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: $green-rgba-two;
+    padding: 35px 33px 33px;
+    z-index: 100;
+    min-width: 494px;
+    max-width: 494px;
+    margin-right: -12%;
+    @media only screen and (min-width: 0px) and (max-width: 479.98px) {
+      margin-right: 0;
+      padding: 35px 0 33px 0;
+      right: auto;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: auto;
+      max-width: none;
+      width: 90%;
+      transition: all .2s ease-in-out;
+    }
+    @media only screen and (min-width: 480px) and (max-width: 767.98px) {
+      margin-right: 0;
+      padding: 35px 0 33px 33px;
+      right: auto;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 421px;
+      max-width: 421px;
+      transition: all .2s ease-in-out;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991.98px) {
+      margin-right: 58px;
+    }
+    @media only screen and (min-width: 992px) and (max-width: 1023.98px) {
+      margin-right: -12%;
+    }
+    @media only screen and (min-width: 1024px) and (max-width: 1279.98px) {
+      margin-right: 0;
+    }
+    .item {
+      @media only screen and (max-width: 767.98px) {
+        position: relative;
+      }
+      @media only screen and (min-width: 0px) and (max-width: 479.98px) {
+        margin: 0 0 0 33px;
+      }
+      h3 {
+        color: $white-one;
+        @media only screen and (max-width: 1599.98px) {
+          line-height: 40px;
+        }
+        @media only screen and (max-width: 1279.98px) {
+          padding-right: 50px;
+        }
+        @media only screen and (max-width: 767.98px) {
+          transition: all .2s ease-in-out;
+          opacity: 1;
+          padding-right: 70px;
+        }
+      }
+      article {
+        margin-bottom: 17px;
+        @media only screen and (max-width: 767.98px) {
+          transition: all .2s ease-in-out;
+          opacity: 1;
+        }
+        @media only screen and (max-width: 479.98px) {
+          padding-right: 62px;
+        }
+      }
+      figure {
+        display: flex;
+        align-items: center;
+        align-content: center;
+      }
+      &__icon {
+        margin-right: 42px;
+        @media only screen and (max-width: 320px) {
+          margin-right: 15px;
+        }
+      }
+      figcaption {
+        color: $white-one;
+      }
+    }
+    &_cost {
+      padding-top: 23px;
+      padding-bottom: 36px;
+      @media only screen and (max-width: 767.98px) {
+        padding-top: 18px;
+        padding-bottom: 27px;
+      }
+      p {
+        font-family: $philosopher-font;
+        color: $white-one;
+        small {
+          font-size: 18px;
+        }
+      }
+    }
+    .button {
+      @media only screen and (max-width: 360px) {
+        max-width: 220px;
+        padding-right: 0;
+        svg {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 320px) {
+        max-width: 200px;
+      }
+    }
+    &.collapse {
+      @media only screen and (min-width: 280px) and (max-width: 767.98px) {
+        right: 0;
+        left: auto;
+        transform: translate(0, -50%);
+        padding: 35px 0 33px 0;
+        min-width: 62px;
+        max-width: 62px;
+        background: transparent;
+        transition: right .2s ease-in-out, background .2s ease-in-out, min-width .2s ease-in-out, max-width .2s ease-in-out, padding .2s ease-in-out;
+        h3, article, .number-rooms__carousel-info_cost, .button {
+          opacity: 0;
+        }
+        .item {
+          margin-left: 0;
+        }
+      }
+      .number-rooms__button {
+        right: auto;
+        left: 0;
+        transition: all .2s ease-in-out;
+      }
+    }
+  }
+  &__button {
+    display: none;
+    @media only screen and (max-width: 767.98px) {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+      border: 1px solid $white-one;
+      text-align: center;
+      border-radius: 30px 0 0 30px;
+      padding: 65px 18px 65px;
+      color: $white-one;
+      font-size: 16px;
+      font-family: $verdana-font;
+      font-weight: 500;
+      z-index: 1000;
+      background: $green-rgba-two;
+      transition: all .2s ease-in-out;
+    }
+    span {
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+    }
+  }
+  &__carousel-img {
+    position: relative;
+    z-index: 1;
+    .item {
+      width: 1077px;
+      img {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @media only screen and (max-width: 767.98px) {
+          height: 676px;
+        }
+        @media only screen and (max-width: 400px) {
+          height: 752px;
+        }
+      }
+    }
+    .owl-nav {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      display: flex;
+      width: 100%;
+      z-index: 10000;
+      @media only screen and (min-width: 280px) and (max-width: 767.98px) {
+        justify-content: center;
+      }
+      @media only screen and (min-width: 1024px) and (max-width: 1279.98px) {
+        justify-content: flex-end;
+      }
+      .owl-prev {
+        margin-left: 20%;
+        margin-right: 10%;
+        transition: all .2s ease;
+        border: 1px solid $white-one;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        @include flex-center-wrap;
+        justify-content: center;
+        @media only screen and (min-width: 0px) and (max-width: 400px) {
+          margin-left: 0;
+          margin-right: 30%;
+        }
+        @media only screen and (min-width: 400.98px) and (max-width: 767.98px) {
+          margin-left: 0;
+          margin-right: 20%;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1023.98px) {
+          margin-left: 58px;
+          margin-right: 10%;
+        }
+        @media only screen and (min-width: 1024px) and (max-width: 1279.98px) {
+          margin-left: 0;
+          margin-right: 0;
+          transform: translateX(-393px);
+        }
+        @media only screen and (min-width: 1280px) and (max-width: 1599.98px) {
+          margin-left: 26%;
+          margin-right: 15%;
+        }
+        &:hover {
+          background: $green-one;
+          border: 1px solid transparent;
+          svg {
+            animation: arrow-right-anim-in infinite .7s;
+          }
+        }
+      }
+      .owl-next {
+        transition: all .2s ease;
+        border: 1px solid $white-one;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        @include flex-center-wrap;
+        justify-content: center;
+        @media only screen and (min-width: 1024px) and (max-width: 1279.98px) {
+          transform: translateX(-320px);
+        }
+        &:hover {
+          background: $green-one;
+          border: 1px solid transparent;
+          svg {
+            animation: arrow-left-anim-in infinite .7s;
+          }
+        }
+      }
+    }
+  }
+  #numberRoomsCounter {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    z-index: 1;
+    margin-left: 28%;
+    text-align: center;
+    font-family: $philosopher-font;
+    font-weight: normal;
+    display: flex;
+    align-content: baseline;
+    align-items: baseline;
+    @media only screen and (min-width: 280px) and (max-width: 767.98px) {
+      margin-left: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1023.98px) {
+      margin-left: 125px;
+    }
+    @media only screen and (min-width: 1024px) and (max-width: 1279.98px) {
+      bottom: 10px;
+      margin-left: 0;
+      transform: translateX(-383px);
+      left: auto;
+      right: 0;
+    }
+    @media only screen and (min-width: 1280px) and (max-width: 1599.98px) {
+      margin-left: 37%;
+    }
+    big {
+      font-size: 48px;
+      color: $white-one;
+      margin-right: 5px;
+    }
+    small {
+      font-size: 24px;
+      color: $grey-seven;
+    }
+  }
+  &__info {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    @include flex-center-wrap;
+    @media only screen and (min-width: 280px) and (max-width: 1023.98px) {
+      display: none;
+    }
+    &_text {
+      padding-left: 18%;
+      flex: 0 0 80%;
+      max-width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      @media only screen and (max-width: 1279.98px) {
+        padding-left: 15px;
+      }
+      h2 {
+        padding-bottom: 50px;
+        text-align: left;
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+        display: block;
+      }
+    }
+  }
+}

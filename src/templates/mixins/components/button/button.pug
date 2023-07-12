@@ -1,0 +1,40 @@
+mixin littel-border(hrefLink, titleLink)
+  a.button.button__little.button__little_border(href=hrefLink title='' target='_blank' role='button')
+    span=titleLink
+    +arrow-green-right
+
+mixin small-bg-form(typeBtn, titleBtn, addClass)
+  button.button.button__small.button__small_bg(type=typeBtn title='' role='button' class=addClass)
+    span=titleBtn
+    +arrow-white-right
+
+mixin small-bg-green(hrefLink, titleLink, dataToggle, dataTarget, addClass)
+  a.button.button__small.button__small_bg(href=hrefLink title='' target='_blank' data-toggle=dataToggle data-target=dataTarget role='button' class=addClass)
+    span=titleLink
+    +arrow-white-right
+
+mixin small-border-white(hrefLink, titleLink, dataToggle, dataTarget, addClass, targetLink)
+  a.button.button__small.button__small_border-white(href=hrefLink title='' target=targetLink data-toggle=dataToggle data-target=dataTarget role='button' class=addClass)
+    span=titleLink
+    +arrow-green-right
+
+mixin middle-border(hrefLink, titleLink, dataToggle, dataTarget, addClass)
+  a.button.button__middle.button__middle_border(href=hrefLink title='' target='_blank' data-toggle=dataToggle data-target=dataTarget role='button' class=addClass)
+    span=titleLink
+    +arrow-green-right
+
+mixin big-bg-form(typeBtn, titleBtn, addClass)
+  button.button.button__big.button__big_bg(type=typeBtn title='' role='button' class=addClass)
+    span=titleBtn
+    +arrow-white-right
+
+mixin big-bg(hrefLink, titleLink, dataToggle, dataTarget, addClass)
+  a.button.button__big.button__big_bg(href=hrefLink title='' target='_blank' data-toggle=dataToggle data-target=dataTarget role='button' class=addClass)
+    span=titleLink
+    +arrow-white-right
+
+mixin large-border(hrefLink, titleLink, dataToggle, dataTarget, addClass)
+  a.button.button__large.button__large_border(href=hrefLink title='' target='_blank' data-toggle=dataToggle data-target=dataTarget role='button' class=addClass)
+    span=titleLink
+    +arrow-green-right
+

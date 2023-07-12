@@ -1,0 +1,54 @@
+.container {
+
+  &__customized {
+
+    @media only screen and (min-width: 0px) {
+      max-width: 100%;
+    }
+
+    @media only screen and (min-width: 576px) {
+      max-width: 510px;
+    }
+
+    @media only screen and (min-width: 768px) {
+      max-width: 764px;
+    }
+
+    @media only screen and (min-width: 992px) {
+      max-width: 908px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      max-width: 1020px;
+    }
+
+    @media only screen and (min-width: 1280px) {
+      max-width: 1220px;
+    }
+
+    @media only screen and (min-width: 1600px) {
+      max-width: 1540px;
+    }
+
+    &_fluid {
+      max-width: 1920px;
+    }
+
+  }
+
+}
+[class*="__col-"] {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+[class*="__col"] {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}

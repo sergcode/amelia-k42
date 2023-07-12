@@ -1,0 +1,46 @@
+/* Default styles */
+@import './variables';
+@import './mixins';
+@import './jquery.form.styler/jquery.form.styler';
+@import './jquery.form.styler/jquery.form.styler.theme';
+@import './fonts';
+@import './color-theme';
+@import './theme';
+@import './default';
+
+/* Components */
+@import './сomponents/button';
+@import './сomponents/grid';
+@import './сomponents/header';
+@import './сomponents/hamburger';
+@import './сomponents/typography';
+@import './сomponents/breadcrumbs';
+@import './сomponents/form/form-horizontal';
+@import './сomponents/form/form-vertical';
+@import './сomponents/room-classes/room-classes';
+@import './сomponents/photogallery-before-footer/photogallery-before-footer';
+@import './сomponents/footer';
+@import './сomponents/modals/stocks';
+@import './сomponents/modals/customer-retention';
+@import 'сomponents/404';
+
+/* Body Content style */
+@import './header-content/header-content';
+@import './services/services';
+@import './advantages/advantages';
+@import './number-rooms/number-rooms';
+@import './application/application';
+@import './conditions/conditions';
+@import './information/information';
+@import './steps/steps';
+@import './photogallery/photogallery';
+@import './timetable/timetable';
+@import './map/map';
+@import './before-footer/before-footer';
+@import './сomponents/modal';
+
+/* Single Page style */
+@import './more-info/more-info';
+@import './important-info/important-info';
+
+

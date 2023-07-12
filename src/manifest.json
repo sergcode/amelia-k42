@@ -1,0 +1,8 @@
+{
+	"name": "Amelia42.ru: Частный пансионат для престарелых | Дом для пожилых и инвалидов | Заказать номер близкому человеку",
+	"short_name": "Amelia42.ru",
+	"start_url": "?homescreen=1",
+	"display": "standalone",
+	"background_color": "#72777a",
+	"theme_color": "#72777a"
+}

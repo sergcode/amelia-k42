@@ -1,0 +1,414 @@
+extends ../templates/layouts/default
+
+block vars
+  -
+    title = 'Home'
+    stylePath=''
+    wayImg = "./assets/img/";
+    logoHome = '#home'
+    oneItemMenu = '/#conditions'
+    twoItemMenu = "/#services"
+    threeItemMenu = "/#advantages"
+    fourItemMenu = "/#numberRooms"
+    fiveItemMenu = "/#steps"
+    sixItemMenu = "/#photogallery"
+    sevenItemMenu = "/#timetable"
+    eightItemMenu = "/#map"
+
+block content
+
+  main.main(role='main')
+    //breadcrumbs
+    section#home.breadcrumbs
+      .container.container__customized
+        .row
+          .breadcrumbs__crumbs
+            ul
+              li
+                a(href='/' title='Вернуться на главную' role='link') Главная
+              li.breadcrumbs__marker
+                span &bull;
+              li Номер класса "Эконом"
+          .breadcrumbs__button
+            ul
+              li.active
+                a(title='' role='link') Эконом
+              li
+                a(href='/comfort.html' title='' role='link') Комфорт
+              li
+                a(href='/luxe.html' title='' role='link') Люкс
+                span.icon-lux
+                  +lux
+
+    //more-info
+    section#moreInfo.more-info
+      .container.container__customized
+        .row
+          .more-info__info
+            .more-info__info_text
+              h1.title.title__h1 4-5 местный номер в одной или двух смежных комнатах класса "Эконом"
+              .more-info__advantages-main
+                .row
+                  .more-info__advantages-main_col
+                    article
+                      figure
+                        .more-info__advantages-main_img
+                          +peoples-advantages
+                        figcaption.text.text__littel 4-5 человек
+                  .more-info__advantages-main_col
+                    article
+                      figure
+                        .more-info__advantages-main_img
+                          +serving-advantages
+                        figcaption.text.text__littel 4-х разовое питание
+                  .more-info__advantages-main_col
+                    article
+                      figure
+                        .more-info__advantages-main_img
+                          +sponge-advantages
+                        figcaption.text.text__littel Уборка номеров
+                  .more-info__advantages-main_col
+                    article
+                      figure
+                        .more-info__advantages-main_img
+                          +toilet-advantages
+                        figcaption.text.text__littel Санузел в номере
+                  .more-info__advantages-main_col
+                    article
+                      figure
+                        .more-info__advantages-main_img
+                          +pedestal-advantages
+                        figcaption.text.text__littel Прикроватная тумбочка
+                  .more-info__advantages-main_col.more-info__advantages-main_mb-0
+                    article
+                      figure
+                        .more-info__advantages-main_img
+                          +mattress-advantages
+                        figcaption.text.text__littel Противопролежневый матрац
+                  .more-info__advantages-main_col.more-info__advantages-main_mb-0
+                    article
+                      figure
+                        .more-info__advantages-main_img
+                          +cupboard-advantages
+                        figcaption.text.text__littel Шкаф для одежды
+                  .more-info__advantages-main_col.more-info__advantages-main_mb-0
+                    article
+                      figure
+                        .more-info__advantages-main_img
+                          +refrigerator-advantages
+                        figcaption.text.text__littel Холодильник на этаже
+                  .more-info__advantages-main_col.more-info__advantages-main_mb-0
+                    article
+                      figure
+                        .more-info__advantages-main_img
+                          +cooler-advantages
+                        figcaption.text.text__littel Куллер с водой на этаже
+
+              .more-info__advantages-add-info
+                .row
+                  .more-info__advantages-add-info_col.more-info__advantages-add-info_pr-53
+                    article
+                      figure
+                       figcaption.text.text__middle 20-27 кв. м
+                  .more-info__advantages-add-info_col.more-info__advantages-add-info_pr-53
+                    article
+                      figure
+                        .more-info__advantages-add-info_img
+                          +wi-fi-advantages
+                        figcaption.text.text__middle Wi-fi
+                  .more-info__advantages-add-info_col
+                    article
+                      figure
+                        .more-info__advantages-add-info_img
+                          +button-advantages
+                        figcaption.text.text__middle Кнопка вызова персонала в номере
+
+              .more-info__cost
+                p.text__big
+                  small от&nbsp;
+                  | 600&nbsp;
+                  small руб. в день
+              +small-bg-green('#popup:marquiz_5e943f130dc3f90044dd0a32', 'Забронировать номер', '', '', '')
+          .more-info__carousel
+            .more-info__carousel_wrapper
+              .owl-carousel.owl-theme.more-info__carousel-img(role='slider')
+                .item
+                  img(src=wayImg+'number-rooms/frame.png' style='background-image: url("./assets/img/number-rooms/economy/IMG_6033.jpg")' alt='')
+                .item
+                  img(src=wayImg+'number-rooms/frame.png' style='background-image: url("./assets/img/number-rooms/economy/IMG_6038.jpg")' alt='')
+                .item
+                  img(src=wayImg+'number-rooms/frame.png' style='background-image: url("./assets/img/number-rooms/economy/IMG_6034.jpg")' alt='')
+                .item
+                  img(src=wayImg+'number-rooms/frame.png' style='background-image: url("./assets/img/number-rooms/economy/IMG_6037.jpg")' alt='')
+
+              #moreInfoCounter
+                big
+                small
+    //important-info
+    section.important-info
+      .container.container__customized
+        .row
+          .important-info__left
+            .important-info__left_wrapper
+              p.text.text__small
+                | Мы предлагаем гибкую систему цен, при которой каждый пожилой человек, с любым материальным
+                | достатком, сможет получить высококачественное обслуживание. Стоимость проживания престарелого
+                | человека в условиях пансионата для каждого нового постояльца оговаривается индивидуально,
+                | так как на эту сумму влияют многие персональные факторы. В доме интернате для престарелых
+                | «Амелия» номера класса «Эконом» рассчитаны на проживание от 4 до 5 человек. Номера класса
+                | «Эконом», расположенные на первом и втором этажах, оборудованы индивидуальной кроватью для
+                | обеспечения отдыха и сна, отдельной душевой комнатой для гигиенических процедур, раздельным
+                | санузлом в номере, телевизором. Питаются постояльцы в общей столовой, а холодильник расположен
+                | в коридоре. На всех этажах расположены кулеры с чистой артезианской горячей и холодной водой.
+              p.text.text__small
+                | Круглосуточно доступна возможность выпить чай или кофе, почитать книги из библиотеки пансионата,
+                | телефонная связь. И важным преимуществом проживания в номерах «Эконом» класса является общение
+                | со сверстниками, обмен информацией и новостями, интересными событиями в жизни.
+
+          .important-info__right
+            .important-info__right_wrapper
+              h3.title.title__h3 Важная информация
+              p.text.text__small-italic
+                | Мы готовы принять для проживания из близлежащих областей и краев: Новосибирской, Томской,
+                | Омской, Алтайского края и Республики Алтай.  Поможем осуществить доставку или проконсультируем
+                | как добраться к нам.
+    //room-classes
+    section.room-classes
+      .container.container__customized
+        .row.room-classes__position
+          .room-classes__wrapper
+            .room-classes__listblock
+              h2.title.title__h2 Классы номеров
+              ul.room-classes__list
+                li.room-classes__list_header
+                  .room-classes__list_col УСЛУГИ И СТОИМОСТЬ
+                  .room-classes__list_col ЭКОНОМ
+                  .room-classes__list_col СТАНДАРТ
+                  .room-classes__list_col ЛЮКС
+                li.room-classes__list_body
+                  .room-classes__list_col Стоимость проживания, руб./сутки
+                  .room-classes__list_col от 600
+                  .room-classes__list_col от 700
+                  .room-classes__list_col от 1200
+                li.room-classes__list_body
+                  .room-classes__list_col Количество проживающих в номере, чел.
+                  .room-classes__list_col 4-5
+                  .room-classes__list_col 3
+                  .room-classes__list_col 1-2
+                li.room-classes__list_body
+                  .room-classes__list_col Питание, кол-во раз
+                  .room-classes__list_col 4
+                  .room-classes__list_col 4
+                  .room-classes__list_col 5 по индивид. заказам
+                li.room-classes__list_body
+                  .room-classes__list_col Уборка номеров, раз/сутки
+                  .room-classes__list_col 1
+                  .room-classes__list_col 1
+                  .room-classes__list_col 2
+                li.room-classes__list_body
+                  .room-classes__list_col Вызов врача
+                  .room-classes__list_col Бесплатно
+                  .room-classes__list_col Бесплатно
+                  .room-classes__list_col Бесплатно
+                li.room-classes__list_body
+                  .room-classes__list_col Смена постельного белья и полотенец, раз/неделю
+                  .room-classes__list_col 1
+                  .room-classes__list_col 1
+                  .room-classes__list_col 2
+                li.room-classes__list_body
+                  .room-classes__list_col Средства гигиены (зубная паста, мыло, шампунь, памперсы, бритвенные принадлежности и т.п.)
+                  .room-classes__list_col
+                    +cross
+                  .room-classes__list_col
+                    +cross
+                  .room-classes__list_col Включены
+
+
+              ul.room-classes__list
+                li.room-classes__list_header
+                  .room-classes__list_col-auto ОСНАЩЕНИЕ НОМЕРОВ
+                li.room-classes__list_body
+                  .room-classes__list_col Подушки
+                  .room-classes__list_col Холлофайбер
+                  .room-classes__list_col Холлофайбер
+                  .room-classes__list_col Пух/перо/ортопедические
+                li.room-classes__list_body
+                  .room-classes__list_col Класс постельного белья, г./м2
+                  .room-classes__list_col Эконом 80-100
+                  .room-classes__list_col Эконом 80-100
+                  .room-classes__list_col Стандарт 110-120
+                li.room-classes__list_body
+                  .room-classes__list_col Отделка стен обоями
+                  .room-classes__list_col Эконом
+                  .room-classes__list_col Эконом
+                  .room-classes__list_col Люкс
+                li.room-classes__list_body
+                  .room-classes__list_col Напольные или ковровые покрытия
+                  .room-classes__list_col Ламинат
+                  .room-classes__list_col Ковролин
+                  .room-classes__list_col Ковролин
+                li.room-classes__list_body
+                  .room-classes__list_col Кровать трансформер
+                  .room-classes__list_col По инд. запросу
+                  .room-classes__list_col По инд. запросу
+                  .room-classes__list_col
+                    +jackdaw
+                li.room-classes__list_body
+                  .room-classes__list_col Телевизор в номере, диагональ
+                  .room-classes__list_col
+                    +jackdaw
+                  .room-classes__list_col
+                    +jackdaw
+                  .room-classes__list_col LCD, от 40''
+                li.room-classes__list_body
+                  .room-classes__list_col Против пролежневый матрац
+                  .room-classes__list_col
+                    +jackdaw
+                  .room-classes__list_col
+                    +jackdaw
+                  .room-classes__list_col
+                    +jackdaw
+                li.room-classes__list_body
+                  .room-classes__list_col Шкаф для одежды
+                  .room-classes__list_col
+                    +jackdaw
+                  .room-classes__list_col
+                    +jackdaw
+                  .room-classes__list_col
+                    +jackdaw
+                li.room-classes__list_body
+                  .room-classes__list_col Прикроватная тумбочка
+                  .room-classes__list_col
+                    +jackdaw
+                  .room-classes__list_col
+                    +jackdaw
+                  .room-classes__list_col
+                    +jackdaw
+                li.room-classes__list_body
+                  .room-classes__list_col Интернет, Wi-Fi
+                  .room-classes__list_col
+                    +jackdaw
+                  .room-classes__list_col
+                    +jackdaw
+                  .room-classes__list_col
+                    +jackdaw
+                li.room-classes__list_body
+                  .room-classes__list_col Светонепроницаемые шторы на окнах
+                  .room-classes__list_col
+                    +cross
+                  .room-classes__list_col
+                    +cross
+                  .room-classes__list_col
+                    +jackdaw
+                li.room-classes__list_body
+                  .room-classes__list_col Холодильник в номере
+                  .room-classes__list_col
+                    +cross
+                  .room-classes__list_col
+                    +cross
+                  .room-classes__list_col
+                    +jackdaw
+                li.room-classes__list_body
+                  .room-classes__list_col Чайник
+                  .room-classes__list_col
+                    +cross
+                  .room-classes__list_col
+                    +cross
+                  .room-classes__list_col
+                    +jackdaw
+                li.room-classes__list_body
+                  .room-classes__list_col Кресло
+                  .room-classes__list_col
+                    +cross
+                  .room-classes__list_col
+                    +cross
+                  .room-classes__list_col
+                    +jackdaw
+                li.room-classes__list_body
+                  .room-classes__list_col Журнальный столик
+                  .room-classes__list_col
+                    +cross
+                  .room-classes__list_col
+                    +cross
+                  .room-classes__list_col
+                    +jackdaw
+                li.room-classes__list_body
+                  .room-classes__list_col Индивидуальное прикроватное освещение (бра)
+                  .room-classes__list_col
+                    +cross
+                  .room-classes__list_col
+                    +cross
+                  .room-classes__list_col
+                    +jackdaw
+                li.room-classes__list_body
+                  .room-classes__list_col Картинные репродукции на стенах
+                  .room-classes__list_col
+                    +cross
+                  .room-classes__list_col
+                    +cross
+                  .room-classes__list_col
+                    +jackdaw
+
+
+          +middle-border('#popup:marquiz_5e943f130dc3f90044dd0a32', 'Оставить заявку на номер', '', '', '')
+    //photogallery
+    section#photogallery.photogallery.photogallery__before-footer
+      .container.container__customized
+        h2.title.title__h2 Фотогаллерея
+        .owl-carousel.owl-theme.photogallery__carousel
+          .item
+            img(src=wayImg + 'photogallery/IMG_6139.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_6114.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_6133.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_6129.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_5945.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_5947.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_5950.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_5961.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_5965.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_5966.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_5969.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_5975.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_5986.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_5991.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_6001.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_6002.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_6006.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_6007.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_6008.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_6026.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_6029.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_6011.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_6014.jpg' alt='')
+          .item
+            img(src=wayImg + 'photogallery/IMG_6016.jpg' alt='')
+
+        #counter
+          big
+          small
+
+
+
+

@@ -1,0 +1,56 @@
+.application {
+  padding-top: 85px;
+  padding-bottom: 12px;
+  background: $white-one;
+  @media only screen and (max-width: 1023.98px) {
+    padding-top: 60px;
+  }
+  @media only screen and (max-width: 767.98px) {
+    padding-bottom: 22px;
+  }
+  &__position {
+    justify-content: center;
+  }
+  &__col-8 {
+    @media only screen and (min-width: 992px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    @media only screen and (min-width: 1024px) {
+      flex: 0 0 80%;
+      max-width: 80%;
+    }
+    @media only screen and (min-width: 1280px) {
+      flex: 0 0 70%;
+      max-width: 70%;
+    }
+    @media only screen and (min-width: 1600px) {
+      flex: 0 0 66.66667%;
+      max-width: 66.66667%;
+    }
+  }
+  &__col-10 {
+    @media only screen and (min-width: 1280px) {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+    }
+    @media only screen and (min-width: 1600px) {
+      flex: 0 0 83.33333%;
+      max-width: 83.33333%;
+    }
+  }
+  h2 {
+    padding-bottom: 46px;
+    @media only screen and (max-width: 767.98px) {
+      padding-bottom: 36px;
+    }
+  }
+  .text__small-italic {
+    padding-bottom: 90px;
+    text-align: center;
+    @media only screen and (max-width: 1279.98px) {
+      padding-bottom: 50px;
+    }
+  }
+}

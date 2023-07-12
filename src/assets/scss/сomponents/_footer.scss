@@ -1,0 +1,259 @@
+.footer {
+  background: $black-two;
+  padding-top: 53px;
+  padding-bottom: 74px;
+  color: $grey-three;
+  font-size: 16px;
+  line-height: 25px;
+  font-family: $verdana-font;
+  font-weight: normal;
+  z-index: 0;
+  @media only screen and (max-width: 991.98px) {
+    padding-bottom: 0;
+  }
+  @media only screen and (max-width: 767.98px) {
+    font-size: 12px;
+  }
+  @media only screen and (max-width: 460.98px) {
+    font-size: 14px;
+  }
+  &__col {
+    &_one {
+      flex: 0 0 25%;
+      max-width: 25%;
+      @media only screen and (max-width: 1279.98px) {
+        order: 1;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+        margin-bottom: 70px;
+      }
+      @media only screen and (max-width: 991.98px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      @media only screen and (max-width: 767.98px) {
+        margin-bottom: 50px;
+      }
+      @media only screen and (max-width: 460.98px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    }
+    &_two {
+      flex: 0 0 25%;
+      max-width: 25%;
+      @media only screen and (max-width: 1279.98px) {
+        order: 4;
+        flex: 100%;
+        max-width: 100%;
+      }
+      @media only screen and (max-width: 991.98px) {
+        order: 3;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      @media only screen and (max-width: 460.98px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      ul {
+        &:first-child {
+          @media only screen and (max-width: 1279.98px) {
+            flex: 0 0 33.33333%;
+            max-width: 33.33333%;
+            position: relative;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 15px;
+          }
+          @media only screen and (max-width: 991.98px) {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+          @media only screen and (max-width: 460.98px) {
+            padding-bottom: 30px;
+          }
+        }
+        &:last-child {
+          @media only screen and (max-width: 1279.98px) {
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin: 0;
+            br {
+              display: none;
+            }
+          }
+          @media only screen and (max-width: 991.98px) {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+          }
+        }
+      }
+    }
+    &_three {
+      flex: 0 0 25%;
+      max-width: 25%;
+      @media only screen and (max-width: 1279.98px) {
+        order: 2;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+        margin-bottom: 70px;
+      }
+      @media only screen and (max-width: 991.98px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      @media only screen and (max-width: 767.98px) {
+        margin-bottom: 50px;
+      }
+      @media only screen and (max-width: 460.98px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      ul {
+        &:first-child {
+          padding-bottom: 30px;
+        }
+      }
+    }
+    &_four {
+      flex: 0 0 25%;
+      max-width: 25%;
+      @media only screen and (max-width: 1279.98px) {
+        order: 3;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+        margin-bottom: 70px;
+      }
+      @media only screen and (max-width: 991.98px) {
+        order: 4;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      @media only screen and (max-width: 460.98px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &__logo {
+    margin-bottom: 35px;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    width: 100%;
+    h5 {
+      color: $green-one;
+      font-size: 18px;
+      font-family: $verdana-font;
+      font-weight: 600;
+      line-height: 100%;
+      padding-bottom: 28px;
+      @media only screen and (max-width: 767.98px) {
+        font-size: 16px;
+      }
+    }
+    li {
+      br {
+        @media only screen and (min-width: 1280px) and (max-width: 1599.98px) {
+          display: none;
+        }
+      }
+      a {
+        color: $grey-three;
+        font-size: 16px;
+        @media only screen and (max-width: 767.98px) {
+          font-size: 12px;
+        }
+        @media only screen and (max-width: 460.98px) {
+          font-size: 14px;
+        }
+        &[href*='mailto:'] {
+          text-decoration: underline;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        &[href*='whatsapp:'] {
+          text-decoration: none;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  &__d-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__mt-auto {
+    margin-top: auto;
+  }
+  &__political {
+    li {
+      a {
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &__social-networks {
+    li {
+      a {
+        margin-right: 13px;
+        text-decoration: none;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    @media only screen and (max-width: 991.98px) {
+      margin-bottom: 55px;
+    }
+  }
+  .button {
+    span {
+      &:first-child {
+        @media only screen and (max-width: 767.98px) {
+          display: none;
+        }
+      }
+      &:nth-child(2) {
+        @media only screen and (max-width: 767.98px) {
+          display: none;
+        }
+      }
+      &:nth-child(3) {
+        display: none;
+        @media only screen and (max-width: 767.98px) {
+          display: block;
+        }
+      }
+    }
+    svg {
+      @media only screen and (max-width: 1599.98px) {
+        right: 10px;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,56 @@
+mixin customer-retention
+  #modalCustomerRetention.modal.fade.bd-example-modal-xl.customer-retention(tabindex="-1" role="dialog" aria-labelledby="modalCustomerRetention" aria-hidden="true")
+    .modal-dialog.modal-dialog-centered.modal-xl
+      .modal-content.customer-retention__wrapper
+        button.close(type="button" data-dismiss="modal" aria-label="Close")
+        .customer-retention__content
+          h2.title.title__h2
+            | Оставьте заявку на проживание&nbsp;
+            br
+            | и получите индивидуальное предложение&nbsp;
+            br
+            | от управляющей пансионатом по&nbsp;
+            span акции со скидкой 10%
+          .customer-retention__form
+            .form-vertical
+              form#customerRetention.clear.needs-validation(method='post' action='' role='form' novalidate name='customerRetention')
+                fieldset
+                  .form-row
+                    .form-vertical__input-container
+                      label.form-vertical__label(for="customerRetentionUsername")
+                        | Ваше имя для обращения
+                      input#customerRetentionUsername.form-control.form-vertical__input-theme(
+                        class=colorTheme
+                        type="text"
+                        placeholder="Ваше имя для обращения *"
+                        form='customerRetention'
+                        autocomplete='off'
+                        value=""
+                        required
+                        data-bind="retentionForm.name"
+                      )
+
+                      .invalid-tooltip.invalid-tooltip__vertical
+                        | Введите Ваше имя
+
+                    .form-vertical__input-container
+                      label.form-vertical__label(for="customerRetentionPhone")
+                        | Телефон для связи с Вами
+                      input#customerRetentionPhone.form-control.form-vertical__input-theme(
+                        class=colorTheme
+                        type="tel"
+                        placeholder="Телефон для связи с Вами *"
+                        value=""
+                        form='customerRetention'
+                        autocomplete='off'
+                        required
+                        data-bind="retentionForm.phone"
+                      )
+
+                      .invalid-tooltip.invalid-tooltip__vertical
+                        | Введите Ваш телефон
+
+                    .form-vertical__input-container
+                      +small-bg-form('submit', 'Оставить заявку', '')
+
+  .modal-backdrop.modal-backdrop_customer.fade.show

@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: #
+Host: amelia42.ru
+
+Sitemap: https://www.amelia42.ru/sitemap.xml
+User-agent: Bingbot
+Disallow: /

@@ -1,0 +1,169 @@
+//Verdana
+@font-face {
+  font-family: 'Verdana Pro';
+  src: url('#{$verdana}VerdanaPro-SemiBold.eot');
+  src: local('Verdana Pro SemiBold'), local('VerdanaPro-SemiBold'),
+  url('#{$verdana}VerdanaPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('#{$verdana}VerdanaPro-SemiBold.woff') format('woff'),
+  url('#{$verdana}VerdanaPro-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Verdana Pro';
+  src: url('#{$verdana}VerdanaPro-Regular.eot');
+  src: local('Verdana Pro'), local('VerdanaPro-Regular'),
+  url('#{$verdana}VerdanaPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('#{$verdana}VerdanaPro-Regular.woff') format('woff'),
+  url('#{$verdana}VerdanaPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Verdana Pro';
+  src: url('#{$verdana}VerdanaPro-Bold.eot');
+  src: local('Verdana Pro Bold'), local('VerdanaPro-Bold'),
+  url('#{$verdana}VerdanaPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('#{$verdana}VerdanaPro-Bold.woff') format('woff'),
+  url('#{$verdana}VerdanaPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Verdana Pro';
+  src: url('#{$verdana}VerdanaPro-SemiBoldItalic.eot');
+  src: local('Verdana Pro SemiBold Italic'), local('VerdanaPro-SemiBoldItalic'),
+  url('#{$verdana}VerdanaPro-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('#{$verdana}VerdanaPro-SemiBoldItalic.woff') format('woff'),
+  url('#{$verdana}VerdanaPro-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Verdana Pro';
+  src: url('#{$verdana}VerdanaPro-BlackItalic.eot');
+  src: local('Verdana Pro Black Italic'), local('VerdanaPro-BlackItalic'),
+  url('#{$verdana}VerdanaPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+  url('#{$verdana}VerdanaPro-BlackItalic.woff') format('woff'),
+  url('#{$verdana}VerdanaPro-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Verdana Pro';
+  src: url('#{$verdana}VerdanaPro-BoldItalic.eot');
+  src: local('Verdana Pro Bold Italic'), local('VerdanaPro-BoldItalic'),
+  url('#{$verdana}VerdanaPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('#{$verdana}VerdanaPro-BoldItalic.woff') format('woff'),
+  url('#{$verdana}VerdanaPro-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Verdana Pro';
+  src: url('#{$verdana}VerdanaPro-Black.eot');
+  src: local('Verdana Pro Black'), local('VerdanaPro-Black'),
+  url('#{$verdana}VerdanaPro-Black.eot?#iefix') format('embedded-opentype'),
+  url('#{$verdana}VerdanaPro-Black.woff') format('woff'),
+  url('#{$verdana}VerdanaPro-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Verdana Pro';
+  src: url('#{$verdana}VerdanaPro-Light.eot');
+  src: local('Verdana Pro Light'), local('VerdanaPro-Light'),
+  url('#{$verdana}VerdanaPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('#{$verdana}VerdanaPro-Light.woff') format('woff'),
+  url('#{$verdana}VerdanaPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Verdana Pro';
+  src: url('#{$verdana}VerdanaPro-Italic.eot');
+  src: local('Verdana Pro Italic'), local('VerdanaPro-Italic'),
+  url('#{$verdana}VerdanaPro-Italic.eot?#iefix') format('embedded-opentype'),
+  url('#{$verdana}VerdanaPro-Italic.woff') format('woff'),
+  url('#{$verdana}VerdanaPro-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Verdana Pro';
+  src: url('#{$verdana}VerdanaPro-LightItalic.eot');
+  src: local('Verdana Pro Light Italic'), local('VerdanaPro-LightItalic'),
+  url('#{$verdana}VerdanaPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url('#{$verdana}VerdanaPro-LightItalic.woff') format('woff'),
+  url('#{$verdana}VerdanaPro-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: auto;
+}
+
+//Philosopher
+@font-face {
+  font-family: 'Philosopher';
+  src: url('#{$philosopher}Philosopher-Bold.eot');
+  src: local('Philosopher Bold'), local('Philosopher-Bold'),
+  url('#{$philosopher}Philosopher-Bold.eot?#iefix') format('embedded-opentype'),
+  url('#{$philosopher}Philosopher-Bold.woff') format('woff'),
+  url('#{$philosopher}Philosopher-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Philosopher';
+  src: url('#{$philosopher}Philosopher-BoldItalic.eot');
+  src: local('Philosopher Bold Italic'), local('Philosopher-BoldItalic'),
+  url('#{$philosopher}Philosopher-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('#{$philosopher}Philosopher-BoldItalic.woff') format('woff'),
+  url('#{$philosopher}Philosopher-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Philosopher';
+  src: url('#{$philosopher}Philosopher.eot');
+  src: local('Philosopher'),
+  url('#{$philosopher}Philosopher.eot?#iefix') format('embedded-opentype'),
+  url('#{$philosopher}Philosopher.woff') format('woff'),
+  url('#{$philosopher}Philosopher.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Philosopher';
+  src: url('#{$philosopher}Philosopher-Italic.eot');
+  src: local('Philosopher Italic'), local('Philosopher-Italic'),
+  url('#{$philosopher}Philosopher-Italic.eot?#iefix') format('embedded-opentype'),
+  url('#{$philosopher}Philosopher-Italic.woff') format('woff'),
+  url('#{$philosopher}Philosopher-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: auto;
+}

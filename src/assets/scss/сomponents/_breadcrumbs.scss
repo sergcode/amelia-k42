@@ -1,0 +1,167 @@
+.breadcrumbs {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 32px;
+  background: $white-one;
+  @media only screen and (max-width: 767.98px) {
+    padding-top: 90px;
+  }
+  .row {
+    padding-top: 34px;
+  }
+  &__crumbs {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    @include flex-center-nowrap;
+    justify-content: flex-start;
+    @media only screen and (max-width: 991.98px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-bottom: 30px;
+    }
+    ul {
+      display: flex;
+      list-style-type: none;
+      padding-left: 0;
+      font-family: $verdana-font;
+      font-weight: normal;
+      color: $grey-eight;
+      font-size: 14px;
+      li {
+        a {
+          color: $grey-eight;
+          transition: all .2s ease;
+          text-decoration: none;
+          &:hover {
+            color: $green-one;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  &__marker {
+    font-size: 12px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 0 30px;
+    @media only screen and (max-width: 320px) {
+      padding: 0 15px;
+    }
+    span {
+      display: block;
+    }
+  }
+  &__button {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    @media only screen and (max-width: 1279.98px) {
+      flex: 0 0 60.5%;
+      max-width: 60.5%;
+    }
+    @media only screen and (max-width: 991.98px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    ul {
+      display: flex;
+      list-style-type: none;
+      padding-left: 0;
+      font-family: $verdana-font;
+      font-weight: normal;
+      font-size: 16px;
+      @media only screen and (max-width: 991.98px) {
+        justify-content: space-around;
+      }
+      @media only screen and (max-width: 767.98px) {
+        justify-content: space-between;
+      }
+      li {
+        @include flex-center-wrap;
+        border-radius: 30px;
+        border: 1px solid $green-one;
+        transition: all .2s ease;
+        position: relative;
+        &.active {
+          background: $green-one;
+          a {
+            color: $white-one;
+          }
+          &:hover {
+            background: $green-one;
+          }
+        }
+        .icon-lux {
+          @media only screen and (max-width: 767.98px) {
+            display: none;
+          }
+        }
+        &:hover {
+          background: $green-one;
+          a {
+            color: $white-one;
+          }
+          .icon-lux {
+            svg {
+              path {
+                fill: $white-one;
+              }
+            }
+          }
+        }
+        a {
+          color: $green-one;
+          text-decoration: none;
+          transition: all .2s ease;
+          padding: 18px 59px;
+          @media only screen and (max-width: 767.98px) {
+            padding: 18px 35px;
+          }
+          @media only screen and (max-width: 410.98px) {
+            padding: 18px 25px;
+          }
+          @media only screen and (max-width: 360px) {
+            padding: 18px 18px;
+          }
+          @media only screen and (max-width: 300px) {
+            padding: 18px 10px;
+          }
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        &:nth-child(2) {
+          margin: 0 35px;
+          @media only screen and (max-width: 1023.98px) {
+            margin: 0 10px;
+          }
+          @media only screen and (max-width: 991.98px) {
+            margin: 0;
+          }
+        }
+      }
+    }
+    .icon-lux {
+      position: absolute;
+      right: 0;
+      margin-right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+      svg {
+        path {
+          transition: all .2s ease;
+        }
+      }
+    }
+  }
+}

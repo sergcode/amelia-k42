@@ -1,0 +1,37 @@
+.hamburger {
+  padding: 0;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  z-index: 10000000;
+  width: 34px;
+
+  &.is-active {
+    .hamburger-inner {
+
+      &:before, &:after {
+
+        background-color: $green-two;
+
+      }
+    }
+  }
+}
+
+.hamburger-box {
+  display: flex;
+  width: 30px;
+  height: 22px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+
+  background-color: $green-two;
+  border-radius: 0;
+  height: 3px;
+  width: 100%;
+
+}
+

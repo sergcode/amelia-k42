@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+  web:
+    image: nginx:latest
+    environment:
+      - VIRTUAL_HOST=${VIRTUAL_HOST}
+      - LETSENCRYPT_HOST=${VIRTUAL_HOST}
+      - LETSENCRYPT_EMAIL=${EMAIL}
+    volumes:
+      - ./public:/var/www
+      - ./docker/nginx/site.conf:/etc/nginx/nginx.conf
+    restart: unless-stopped
+networks:
+  default:
+    external:
+      name: webproxy

@@ -1,0 +1,413 @@
+.more-info{
+  position: relative;
+  background: $white-one;
+  padding-top: 0;
+  padding-bottom: 108px;
+  @media only screen and (max-width: 1279.98px) {
+    padding-bottom: 40px;
+  }
+  &__info {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    @include flex-wrap;
+    justify-content: flex-end;
+    @media only screen and (max-width: 1279.98px) {
+      flex: 100%;
+      max-width: 100%;
+      order: 2;
+    }
+    &_text {
+      h1 {
+        padding-bottom: 50px;
+        color: $grey-eight;
+        line-height: 50px;
+        font-family: $philosopher-font;
+        font-weight: bold;
+        font-size: 40px;
+        text-transform: none;
+        @media only screen and (max-width: 1599.98px) {
+          font-size: 36px;
+        }
+        @media only screen and (max-width: 1279.98px) {
+          text-align: center;
+        }
+        @media only screen and (max-width: 479.98px) {
+          font-size: 30px;
+        }
+        @media only screen and (max-width: 310.98px) {
+          font-size: 28px;
+        }
+      }
+      .button {
+        @media only screen and (max-width: 1279.98px) {
+          margin: auto;
+          display: inline-flex;
+        }
+        @media only screen and (max-width: 516.98px) {
+          margin: auto;
+          display: flex;
+        }
+
+      }
+    }
+  }
+  &__carousel {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 725px;
+    max-height: 725px;
+    @media only screen and (max-width: 1599.98px) {
+      flex: 0 0 41.66667%;
+      max-width: 41.66667%;
+    }
+    @media only screen and (max-width: 1279.98px) {
+      min-height: auto;
+      max-height: 100%;
+      flex: 100%;
+      width: 100%;
+      max-width: 100%;
+      display: block;
+      order: 1;
+    }
+    &_wrapper {
+      position: absolute;
+      display: flex;
+      margin-left: auto;
+      height: 100%;
+      @media only screen and (max-width: 1279.98px) {
+        position: relative;
+        display: block;
+      }
+    }
+  }
+  &__advantages-main {
+    border-bottom: 1px solid $green-two;
+    padding-bottom: 27px;
+    margin-bottom: 16px;
+    &_col {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 50px;
+      @media only screen and (max-width: 767.98px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      @media only screen and (max-width: 330.98px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+    }
+    &_mb-0 {
+      margin-bottom: 0;
+      @media only screen and (max-width: 330.98px) {
+        margin-bottom: 50px;
+      }
+    }
+    article {
+      figure {
+        @include flex-center-nowrap;
+        @media only screen and (max-width: 479.98px) {
+          flex-wrap: wrap;
+          flex-direction: column;
+        }
+        figcaption {
+          color: $grey-eight;
+          @media only screen and (max-width: 479.98px) {
+            text-align: center;
+          }
+        }
+      }
+    }
+    &_img {
+      width: 40px;
+      margin-right: 16px;
+      @media only screen and (max-width: 479.98px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__advantages-add-info {
+    border-bottom: 1px solid $green-two;
+    padding-bottom: 16px;
+    margin-bottom: 40px;
+    .row {
+      @media only screen and (max-width: 1279.98px) {
+        justify-content: space-around;
+      }
+    }
+    &_col {
+      width: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      @include flex-center-nowrap;
+      &:first-child {
+        @media only screen and (max-width: 767.98px) {
+          padding-bottom: 30px;
+        }
+      }
+      &:nth-child(2) {
+        @media only screen and (max-width: 767.98px) {
+          padding-bottom: 30px;
+        }
+      }
+    }
+    &_pr-53 {
+      padding-right: 53px;
+      @media only screen and (max-width: 1599.98px) {
+        padding-right: 15px;
+      }
+    }
+    &_img {
+      margin-right: 16px;
+    }
+    article {
+      figure {
+        @include flex-center-nowrap;
+        figcaption {
+          color: $grey-eight;
+        }
+      }
+    }
+  }
+  &__cost {
+    padding-bottom: 35px;
+    @media only screen and (max-width: 1279.98px) {
+      display: inline-block;
+      margin-right: 40px;
+    }
+    @media only screen and (max-width: 767.98px) {
+      margin-right: 12px;
+    }
+    @media only screen and (max-width: 575.98px) {
+      margin-right: 20px;
+    }
+    @media only screen and (max-width: 516.98px) {
+      margin: auto;
+      display: block;
+    }
+    p {
+      color: $green-two;
+      font-family: $philosopher-font;
+      @media only screen and (max-width: 1279.98px) {
+        text-align: center;
+      }
+      small {
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+  }
+  &__carousel-img {
+    position: relative;
+    z-index: 1;
+    .owl-stage-outer {
+      @media only screen and (max-width: 1279.98px) {
+        margin-bottom: 36px;
+      }
+      @media only screen and (max-width: 767.98px) {
+        overflow: visible;
+      }
+      @media only screen and (max-width: 590px) {
+        overflow: hidden;
+      }
+    }
+    .item {
+      width: 1077px;
+      @media only screen and (max-width: 1279.98px) {
+        width: auto;
+      }
+      img {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    .owl-nav {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      display: flex;
+      z-index: 10000;
+      @media only screen and (max-width: 1279.98px) {
+        position: relative;
+        bottom: 10px;
+        justify-content: center;
+      }
+      .owl-prev {
+        margin-left: 50px;
+        margin-right: 100px;
+        transition: all .2s ease;
+        border: 1px solid $white-one;
+        border-radius: 50%;
+        width: 50px;
+        max-width: 50px;
+        min-width: 50px;
+        height: 50px;
+        background: transparent;
+        @include flex-center-wrap;
+        justify-content: center;
+        position: relative;
+        @media only screen and (max-width: 1599.98px) {
+          margin-right: 100px;
+        }
+        @media only screen and (max-width: 1279.98px) {
+          border: 1px solid $black-one;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 0;
+          margin-left: -8%;
+          margin-top: 10px;
+          margin-right: 0;
+        }
+        @media only screen and (max-width: 991.98px) {
+          margin-left: -11%;
+        }
+        @media only screen and (max-width: 767.98px) {
+          margin-left: -15%;
+        }
+        @media only screen and (max-width: 479.98px) {
+          width: 40px;
+          max-width: 40px;
+          min-width: 40px;
+          height: 40px;
+          margin-left: -20%;
+          svg {
+            width: 20px;
+          }
+        }
+        svg {
+          path {
+            @media only screen and (max-width: 1279.98px) {
+              fill: $black-one;
+            }
+          }
+        }
+        &:hover {
+          background: $green-one;
+          border: 1px solid transparent;
+          svg {
+            animation: arrow-right-anim-in infinite .7s;
+            path {
+              @media only screen and (max-width: 1279.98px) {
+                fill: $white-one;
+              }
+            }
+          }
+        }
+      }
+      .owl-next {
+        transition: all .2s ease;
+        border: 1px solid $white-one;
+        border-radius: 50%;
+        width: 50px;
+        max-width: 50px;
+        min-width: 50px;
+        height: 50px;
+        background: transparent;
+        @include flex-center-wrap;
+        justify-content: center;
+        position: relative;
+        @media only screen and (max-width: 1279.98px) {
+          border: 1px solid $black-one;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 0;
+          margin-left: 8%;
+          margin-top: 10px;
+        }
+        @media only screen and (max-width: 991.98px) {
+          margin-left: 11%;
+        }
+        @media only screen and (max-width: 767.98px) {
+          margin-left: 15%;
+        }
+        @media only screen and (max-width: 479.98px) {
+          width: 40px;
+          max-width: 40px;
+          min-width: 40px;
+          height: 40px;
+          margin-left: 20%;
+          svg {
+            width: 20px;
+          }
+        }
+        svg {
+          path {
+            @media only screen and (max-width: 1279.98px) {
+              fill: $black-one;
+            }
+          }
+        }
+        &:hover {
+          background: $green-one;
+          border: 1px solid transparent;
+          svg {
+            animation: arrow-left-anim-in infinite .7s;
+            path {
+              @media only screen and (max-width: 1279.98px) {
+                fill: $white-one;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #moreInfoCounter {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    z-index: 1;
+    margin-left: 125px;
+    text-align: center;
+    font-family: $philosopher-font;
+    font-weight: normal;
+    display: inline-block;
+    @media only screen and (max-width: 1599.98px) {
+      margin-left: 112px;
+    }
+    @media only screen and (max-width: 1279.98px) {
+      position: relative;
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 30px;
+      z-index: 0;
+    }
+    big {
+      font-size: 48px;
+      color: $white-one;
+      margin-right: 5px;
+      @media only screen and (max-width: 1279.98px) {
+        color: $black-one;
+      }
+      @media only screen and (max-width: 479.98px) {
+        font-size: 38px;
+      }
+
+    }
+    small {
+      font-size: 24px;
+      color: $grey-seven;
+      @media only screen and (max-width: 1279.98px) {
+        color: $black-one;
+      }
+    }
+  }
+}

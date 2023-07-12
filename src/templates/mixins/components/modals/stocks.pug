@@ -1,0 +1,54 @@
+mixin stocks
+  #modalStocks.modal.fade.bd-example-modal-xl.stocks(tabindex="-1" role="dialog" aria-labelledby="modalStocks" aria-hidden="true")
+    .modal-dialog.modal-dialog-centered.modal-xl
+      .modal-content.stocks__wrapper
+        button.close(type="button" data-dismiss="modal" aria-label="Close")
+        .stocks__content
+          h2.title.title__h2
+            | Оставьте заявку на проживание&nbsp;
+            br
+            | и получите индивидуальное предложение&nbsp;
+            br
+            | от управляющей пансионатом по&nbsp;
+            span акции со скидкой 10%
+          .stocks__form
+            .form-vertical
+              form#stocks.clear.needs-validation(method='post' action='' role='form' novalidate name='formStocksVertical')
+                fieldset
+                  .form-row
+                    .form-vertical__input-container
+                      label.form-vertical__label(for="formStocksUsername")
+                        | Ваше имя для обращения
+                      input#formStocksUsername.form-control.form-vertical__input-theme(
+                        class=colorTheme
+                        type="text"
+                        placeholder="Ваше имя для обращения *"
+                        form='stocks'
+                        autocomplete='off'
+                        value=""
+                        required
+                        data-bind="stocksForm.name"
+                      )
+
+                      .invalid-tooltip.invalid-tooltip__vertical
+                        | Введите Ваше имя
+
+                    .form-vertical__input-container
+                      label.form-vertical__label(for="formStocksPhone")
+                        | Телефон для связи с Вами
+                      input#formStocksPhone.form-control.form-vertical__input-theme(
+                        class=colorTheme
+                        type="tel"
+                        placeholder="Телефон для связи с Вами *"
+                        value=""
+                        form='stocks'
+                        autocomplete='off'
+                        required
+                        data-bind="stocksForm.phone"
+                      )
+
+                      .invalid-tooltip.invalid-tooltip__vertical
+                        | Введите Ваш телефон
+
+                    .form-vertical__input-container
+                      +small-bg-form('submit', 'Оставить заявку', '')

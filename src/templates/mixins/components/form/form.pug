@@ -1,0 +1,106 @@
+mixin form-horizontal(colorTheme)
+  .form-horizontal
+    form#application.clear.needs-validation(method='post' action='' role='form' novalidate name='application' onsubmit="yaCounter52915873.reachGoal('zayavka'); return true;")
+      fieldset
+        .form-row.form-horizontal__center
+          .col-md-4.form-horizontal__input-container
+            label.form-horizontal__label(for="applicationFormUsername")
+              | Ваше имя для обращения
+            input#applicationFormUsername.form-control.form-horizontal__input-theme(
+            class=colorTheme
+            type="text"
+            placeholder="Ваше имя для обращения *"
+            form='application'
+            autocomplete='off'
+            value=""
+            required
+            data-bind="horizontalForm.name"
+            )
+
+            .invalid-tooltip.invalid-tooltip__horizontal
+              | Введите Ваше имя
+
+          .col-md-4.form-horizontal__input-container
+            label.form-horizontal__label(for="applicationFormPhone")
+              | Телефон для связи с Вами
+            input#applicationFormPhone.form-control.form-horizontal__input-theme(
+            class=colorTheme
+            type="tel"
+            placeholder="Телефон для связи с Вами *"
+            value=""
+            form='application'
+            autocomplete='off'
+            required
+            data-bind="horizontalForm.phone"
+            )
+
+            .invalid-tooltip.invalid-tooltip__horizontal
+              | Введите Ваш телефон
+          .col-md-4.form-horizontal__input-container
+            +big-bg-form('submit', 'Отправить', '')
+
+        .form-row.form-horizontal__center
+          .form-group
+            .form-check
+              input#applicationCheck.form-check-input(type="checkbox" value="" form='application' checked required)
+              label.form-check-label(for="applicationCheck")
+                | Подтверждая отправку формы я соглашаюсь на обработку персональных данных и с&nbsp;
+                a(href='' title='' target='_blank') политикой конфиденциальности
+
+              .invalid-feedback
+                | Это обязательное поле
+
+mixin form-vertical(colorTheme)
+  .form-vertical
+    form#beforeFooter.clear.needs-validation(method='post' action='' role='form' novalidate name='beforeFooter' onsubmit="yaCounter52915873.reachGoal('vopros'); return true;")
+      fieldset
+        .form-row.form-vertical_pb-45.form-vertical__center
+          .form-vertical__input-container
+            label.form-vertical__label(for="formVerticalUsername")
+              | Ваше имя для обращения *
+            input#formVerticalUsername.form-control.form-vertical__input-theme(
+              class=colorTheme
+              type="text"
+              placeholder="Ваше имя для обращения *"
+              form='beforeFooter'
+              autocomplete='off'
+              value=""
+              required
+              data-bind="formVertical.name"
+            )
+            .invalid-tooltip.invalid-tooltip__vertical
+              | Введите Ваше имя
+
+          .form-vertical__input-container
+            label.form-vertical__label(for="formVerticalPhone")
+              | Телефон для связи с Вами
+            input#formVerticalPhone.form-control.form-vertical__input-theme(
+              class=colorTheme
+              type="tel"
+              placeholder="Телефон для связи с Вами *"
+              value=""
+              form='beforeFooter'
+              autocomplete='off'
+              required
+              data-bind="formVertical.phone"
+            )
+            .invalid-tooltip.invalid-tooltip__vertical
+              | Введите Ваш телефон
+
+          .form-vertical__input-container
+            label.form-vertical__label(for="formVerticalEmail")
+              | E-mail для отправки предложения
+            input#formVerticalEmail.form-control.form-vertical__input-theme(
+              class=colorTheme
+              type="email"
+              placeholder="E-mail для отправки предложения"
+              value=""
+              form='beforeFooter'
+              autocomplete='off'
+              required
+              data-bind="formVertical.email"
+            )
+            .invalid-tooltip.invalid-tooltip__vertical
+              | Введите Ваш Email
+          .form-vertical__input-container
+            +small-bg-form('submit', 'Отправить', '')

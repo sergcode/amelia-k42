@@ -1,0 +1,682 @@
+extends ../templates/layouts/default
+
+block vars
+  -
+    title = 'Home'
+    stylePath=''
+    wayImg = "./assets/img/";
+    logoHome = '#home'
+    oneItemMenu = '#conditions'
+    twoItemMenu = "#services"
+    threeItemMenu = "#advantages"
+    fourItemMenu = "/luxe.html"
+    fiveItemMenu = "#steps"
+    sixItemMenu = "#photogallery"
+    sevenItemMenu = "#timetable"
+    eightItemMenu = "#map"
+
+block content
+
+  main.main(role='main')
+    //header-content
+    section#home.header-content
+      .container.container__customized
+        h1.title.title__h1
+          | Пансионат&nbsp;
+          br
+          | для престарелых
+        h2.title.title__h2
+          | Закажите номер в доме престарелых&nbsp;
+          br
+          | “Амелия” и подарите близкому&nbsp;
+          br
+          | человеку новое качество жизни&nbsp;
+          br
+          | от&nbsp;
+          span 600 руб./ сутки
+        p.header-content__subtitle
+          | в оборудованном в полном соответствии со всеми&nbsp;
+          br
+          | установленными европейскими стандартами и нормами&nbsp;
+          br
+          | и позволяющими жить полноценной жизнью
+        +littel-border('#popup:marquiz_5e943f130dc3f90044dd0a32', 'Заказать номер', '', '')
+        .header-content__blocks
+          .header-content__blocks_message
+            h2.title.title__h2
+              | Защитите своих престарелых родителей от коронавируса и забронируйте
+              | номер для проживания в изолированной среде пансионата *
+              p * количество мест ограничено
+
+
+
+    //services
+    section#services.services
+      .container.container__customized
+        h2.title.title__h2 Основные услуги дома пансионата “Амелия”
+        +services-content
+        +large-border('#popup:marquiz_5e943f130dc3f90044dd0a32', 'Оставить заявку на бронирование', '', '', '')
+    //advantages
+    section#advantages.advantages
+      .container.container__customized
+        h2.title.title__h2
+          | Почему мы предлагаем разместиться именно&nbsp;
+          br
+          | в нашем пансионате “Амелия”
+        .row
+          .advantages__wrapper.advantages__wrapper-one
+            .advantages__wrapper-one_text
+              p.advantages__wrapper_number 01
+              h3.title.title__h3
+                | Необходим не дорогой&nbsp;
+                br
+                | и регулярный уход?
+              hr
+              p.text.text__small-italic
+                | Ваш пожилой родитель требует постоянного ухода и помощи в передвижениях,
+                | гигиенических процедурах, приготовлении и приеме пищи
+            .advantages__wrapper-one_img
+              img(src=wayImg+'advantages/1.jpg' alt='')
+
+          .advantages__wrapper.advantages__wrapper-two
+            .advantages__wrapper-two_img
+              img(src=wayImg+'advantages/4.jpg' alt='')
+            .advantages__wrapper-two_text
+              p.advantages__wrapper_number 02
+              h3.title.title__h3 Не успеваете стабильно обеспечивать все жизненноважные потребности близкого?
+              hr
+              p.text.text__small-italic
+                | Покупка продуктов, приготовление пищи,
+                | приобретение медикаментов, уборка квартиры, стирка и глажка белья, помощь
+                | в гигиенических процедурах и т.д.
+
+          .advantages__wrapper.advantages__wrapper-three
+            .advantages__wrapper-three_text
+              p.advantages__wrapper_number 03
+              h3.title.title__h3
+                | Вы искренне желаете&nbsp;
+                br
+                | помочь?
+              hr
+              p.text.text__small-italic
+                | Вы, как благодарные дети или родственники, посвящая большую часть времени своей
+                | работе и напряженному ритму жизни, обеспокоены невозможностью уделить достаточно
+                | внимания самому близкому человеку
+            .advantages__wrapper-three_img
+              img(src=wayImg+'advantages/2.jpg' alt='')
+
+          .advantages__wrapper.advantages__wrapper-four
+            .advantages__wrapper-four_img
+              img(src=wayImg + 'advantages/5.jpg' alt='')
+            .advantages__wrapper-four_text
+              p.advantages__wrapper_number 04
+              h3.title.title__h3
+                | Хотите и стремитесь&nbsp;
+                br
+                | дать больше?
+              hr
+              p.text.text__small-italic
+                | Ваш пожилой родственник впадает
+                | в отчаяние и скучает в домашних условиях в одиночестве от отсутствия общения, моральной поддержки и новых друзей и возможности провести время
+                | в среде сверстников
+
+            .advantages__wrapper-five_text
+              p.advantages__wrapper_number 05
+              h3.title.title__h3 Желаете отдать должное своим почтенным родителям?
+              hr
+              p.text.text__small-italic
+                | Мы не забудем былые заслуги и достижения Ваших родных, индивидуально
+                | поздравим их с Днем рождения, напомним о памятных датах и профессиональных
+                | праздниках, согласуем с Вами покупку цветов или подарка к юбилеям
+
+          .advantages__wrapper.advantages__wrapper-five
+            .advantages__wrapper-five_text
+              p.advantages__wrapper_number 05
+              h3.title.title__h3 Желаете отдать должное своим почтенным родителям?
+              hr
+              p.text.text__small-italic
+                | Мы не забудем былые заслуги и достижения Ваших родных, индивидуально
+                | поздравим их с Днем рождения, напомним о памятных датах и профессиональных
+                | праздниках, согласуем с Вами покупку цветов или подарка к юбилеям
+            .advantages__wrapper-five_img
+              img(src=wayImg+'advantages/3.jpg' alt='')
+
+          .advantages__wrapper.advantages__wrapper-six
+            .advantages__wrapper-six_img
+              img(src=wayImg + 'advantages/IMG_6130.jpg' alt='')
+            .advantages__wrapper-six_text
+              h2.title.title__h2 Мы позаботимся о Ваших близких!
+              p.text.text__small-italic.advantages__wrapper-six_mb-20
+                | Оставляйте заявку на официальном сайте пансионата «Амелия» или звоните нам скорее по телефону&nbsp;
+                a(href='tel:88002000729') 8 (800) 200-07-29
+                | &nbsp;(звонок бесплатный) с 09:00 до 21:00 ежедневно.
+              p.text.text__small-italic.advantages__wrapper-six_mb-50
+                | Мы ждем Ваших запросов на бронирование номеров на электронный адрес&nbsp;
+                a(href='mailto:info@amelia42.ru' title='') info@amelia42.ru
+
+              +big-bg('#popup:marquiz_5e943f130dc3f90044dd0a32', 'Оставить заявку на консультацию', '', '', '')
+
+    //number-rooms
+    section#numberRooms.number-rooms
+      .container-fluid.container__customized_fluid
+        .row
+          .number-rooms__carousel
+            .owl-carousel.owl-theme.number-rooms__carousel-info(role='slider')
+              .item
+                h3.title.title__h3 4-5 местный номер класса “Эконом”
+                article(role='article')
+                  figure
+                    .item__icon
+                      +area
+                    figcaption.text.text__small 20-25 кв. м
+                article(role='article')
+                  figure
+                    .item__icon
+                      +rooms
+                    figcaption 1-2 комната
+                article(role='article')
+                  figure
+                    .item__icon
+                      +all-inclusive
+                    figcaption Проживание, питание, уход
+
+                .number-rooms__carousel-info_cost
+                  p.text__big
+                    small от&nbsp;
+                    | 600&nbsp;
+                    small руб. в день
+
+                +small-border-white('/economy.html', 'Подробнее о номере', '', '', '', '')
+                button.number-rooms__button(type='button' role='button')
+                  span Свернуть
+
+              .item
+                h3.title.title__h3 3-х местный номер класса “Комфорт”
+                article(role='article')
+                  figure
+                    .item__icon
+                      +area
+                    figcaption.text.text__small 18-20 кв.м
+                article(role='article')
+                  figure
+                    .item__icon
+                      +rooms
+                    figcaption 1 комната
+                article(role='article')
+                  figure
+                    .item__icon
+                      +all-inclusive
+                    figcaption Проживание, питание, уход
+
+                .number-rooms__carousel-info_cost
+                  p.text__big
+                    small от&nbsp;
+                    | 700&nbsp;
+                    small руб. в день
+
+                +small-border-white('/comfort.html', 'Подробнее о номере', '', '', '', '')
+                button.number-rooms__button(type='button' role='button')
+                  span Свернуть
+
+              .item
+                h3.title.title__h3 Одно или двухместный номер класса “Люкс”
+                article(role='article')
+                  figure
+                    .item__icon
+                      +area
+                    figcaption.text.text__small 12-13 кв. м
+                article(role='article')
+                  figure
+                    .item__icon
+                      +rooms
+                    figcaption 1 комната
+                article(role='article')
+                  figure
+                    .item__icon
+                      +all-inclusive
+                    figcaption Система “Все включено”
+
+                .number-rooms__carousel-info_cost
+                  p.text__big
+                    small от&nbsp;
+                    | 1&nbsp;200&nbsp;
+                    small руб. в день
+
+                +small-border-white('/luxe.html', 'Подробнее о номере', '', '', '', '')
+                button.number-rooms__button(type='button' role='button')
+                  span Свернуть
+
+            .owl-carousel.owl-theme.number-rooms__carousel-img(role='slider')
+              .item
+                img(src=wayImg+'number-rooms/frame.png' style='background-image: url("./assets/img/number-rooms/economy/IMG_6033.jpg")' alt='')
+              .item
+                img(src=wayImg+'number-rooms/frame.png' style='background-image: url("./assets/img/number-rooms/standard/IMG_6069.jpg")' alt='')
+              .item
+                img(src=wayImg+'number-rooms/frame.png' style='background-image: url("./assets/img/number-rooms/luxe/IMG_6109.jpg")' alt='')
+
+            #numberRoomsCounter
+              big
+              small
+          .number-rooms__info
+            .number-rooms__info_text
+              h2.title.title__h2 Номерной фонд пансионата Амелия
+              ul.text.text__small-italic
+                li
+                  | Дом пансионат «Амелия» насчитывает&nbsp;
+                  span.text__small-bold 11 номеров:&nbsp;
+                  br
+                  | 3-х классов для проживаня 39-ти постояльцев:&nbsp;
+                li.text__small-bold Класс &laquo;Эконом&raquo; - 6
+                li.text__small-bold Класс &laquo;Комфорт&raquo; - 2
+                li.text__small-bold Класс &laquo;Люкс&raquo; - 3
+                li
+                  | Размещение в номерах различается количеством проживающих, качеством
+                  | отделки и дизайнерскими интерьерными решениями, специальным оборудованием,
+                  | наличием мебели и бытовой техники в местах общего пользования или номерах,
+                  | питанием и дополнительным сервисом
+                li
+                  | Мы подберем для Ваших близких вариант размещения на любой вкус и бюджет,
+                  | за пенсию с доплатой и без от&nbsp;
+                  span.text__small-bold 600&nbsp;
+                  | до&nbsp;
+                  span.text__small-bold 1200&nbsp;
+                  | рублей в сутки
+
+
+    //application
+    section.application
+      .container.container__customized
+        .row.application__position
+          .application__col-8
+            h2.title.title__h2 Оформите заявку на сайте
+            p.text.text__small-italic
+              | И в самое кратчайшее время Вам перезвонит управляющая пансионатом, расскажет о доме престарелых,
+              | проконсультирует о стоимости и условиях проживания, ответит на Ваши вопросы
+        .row.application__position
+          .col
+            +form-horizontal('')
+    //conditions
+    section#conditions.conditions
+      .container.container__customized
+        .row.conditions__row
+          .conditions__col-5.conditions__wrapper
+            .conditions__text
+              h2.title.title__h2
+                | Как оформиться в недорогой&nbsp;
+                br
+                | пансионат “Амелия”
+              p.text.text__small
+                | Новый и недорогой пансионат для пожилых «Амелия» в Кемерово принимает для проживания людей из любого
+                | населенного пункта Сибирского региона и России. Мы принимаем и оформляем граждан любого возраста с
+                | заболеваниями в любой форме тяжести, группы инвалидности или утраты дееспособности, в том числе
+                | для прохождения реабилитации после инфаркта, инсульта и любых других недугов, и систематическим
+                | уходом в период пребывания.
+              p.text.text__small
+                | До заселения сотрудник пансионата посоветует медицинское учреждение, оказывающее услуги первичной
+                | диагностики, и обязательно проведёт оценку биологического и психического состояния здоровья престарелого человека.
+              p.text.text__small
+                | Мы сможем помочь с оказанием услуг специалиста на дому, который проведет обследование в домашних
+                | условиях по необходимости. Такие процедуры позволят оценить предварительную возможность проживания
+                | в нашем санатории пансионате для пожилых.
+
+            +middle-border('#popup:marquiz_5e943f130dc3f90044dd0a32', 'Оставить заявку', '', '', '')
+          .conditions__col-7.conditions__img
+            img(src=wayImg+'conditions/conditions-wrapper.png' alt='' style='background: url("./assets/img/conditions/conditions-bg.jpg") no-repeat center / cover;')
+    //information
+    section.information
+      .container.container__customized
+        h2.title.title__h2
+          | Необходимые документы и важная информация&nbsp;
+          br
+          | для поселения в пансионат
+        .row
+          .information__col
+            p.text.text__small-bold
+              | Медицинские документы:
+            ul
+              li
+                span Флюрографию или рентген легких, или справка от фтизиатра
+              li
+                span Общие анализы крови с лейкоцитарной формулой и СОЭ
+              li
+                span Анализ мочи
+              li
+                span Посев на патогенную кишечную флору
+              li
+                span Анализ на отсутствие ВИЧ, сифилиса, гепатита В и С (маркеры вирусных гепатитов HBS и анти HCV)
+          .information__col
+            p.text.text__small-bold
+              | Личные документы:
+            ul
+              li
+                span Копия и оригинал паспорта постояльца
+              li
+                span Копия паспорта ближайшего родственника престарелого человека или опекуна
+              li
+                span Копия и оригинал полиса обязательного медицинского страхования
+              li
+                span Амбулаторная медицинская карта пациента с полной историей болезни
+          .information__col
+            p.text.text__small-bold
+              | Личные вещи и одежда, комплектов:
+            ul
+              li
+                span Повседневная одежда для дома - 2
+              li
+                span Нижнего белье и носки – 2
+              li
+                span Подгузники по необходимости
+              li
+                span Тёплые вещи - 1
+              li
+                span Обувь на выход - 1
+              li
+                span Обувь домашнего пользования -1
+              li
+                span Предметы личной гигиены
+              li
+                span Лекарственные средства, прописанные врачами
+              li
+                span Инвалидное кресло, ходунки или костыли по необходимости
+          .information__col
+            p.text.text__small-bold
+              | Противопоказания к проживанию в пансионате:
+            ul
+              li
+                span Туберкулёз
+              li
+                span Кожные заболевания
+              li
+                span Венерической болезни
+              li
+                span Инфекционные заболевания
+              li
+                span Алкогольная или наркотическая зависимость
+    //steps
+    section#steps.steps
+      .container.container__customized
+        .row.steps__position
+          h2.title.title__h2 Этапы оформления
+          .steps__col-8
+            .row.steps__position
+              .steps__col
+                article(role='article')
+                  figure
+                    .steps__icon
+                      +phone
+                    figcaption
+                      h6.title.title__h6 Оставьте заявку
+                      p.text.text__small
+                        | Мы перезвоним и проконсультируем по услугам, согласуем время на посещение пансионата
+              .steps__col
+                article(role='article')
+                  figure
+                    .steps__icon
+                      +peoples
+                    figcaption
+                      h6.title.title__h6 Экскурсия по пенсионату
+                      p.text.text__small
+                        | Вы лично увидите, оцените и выберите условия проживания,
+                        | согласуете порядок дальнейших действий
+              .steps__col
+                article(role='article')
+                  figure
+                    .steps__icon
+                      +document
+                    figcaption
+                      h6.title.title__h6 Размещение
+                      p.text.text__small
+                        | Мы заключаем договор
+                        | на содержание и уход,
+                        | Вы вносите оплату
+                        | в день заселения
+              .steps__col
+                article(role='article')
+                  figure
+                    .steps__icon
+                      +skype
+                    figcaption
+                      h6.title.title__h6 Общение
+                      p.text.text__small
+                        | Поможем с настройками любого мессенджера на Вашем телефоне: Скайп, Вотсап,
+                        | Вайбер для общения или предоставим свой телефон.
+              .steps__col
+                article(role='article')
+                  figure
+                    .steps__icon
+                      +clock-step
+                    figcaption
+                      h6.title.title__h6 Посещения
+                      p.text.text__small
+                        | Вы в любое время, до отхода ко сну, и без ограничений по времени сможете прибыть в гости
+                        | к близкому человеку
+
+    //photogallery
+    section#photogallery.photogallery
+      .container.container__customized
+        h2.title.title__h2 Фотогаллерея
+        .owl-carousel.owl-theme.photogallery__carousel
+          .item
+            img(src=wayImg+'photogallery/IMG_6139.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_6114.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_6133.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_6129.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_5945.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_5947.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_5950.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_5961.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_5965.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_5966.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_5969.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_5975.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_5986.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_5991.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_6001.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_6002.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_6006.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_6007.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_6008.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_6026.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_6029.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_6011.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_6014.jpg' alt='')
+          .item
+            img(src=wayImg+'photogallery/IMG_6016.jpg' alt='')
+
+        #counter
+          big
+          small
+
+    //timetable
+    section.timetable
+      .container.container__customized
+        .row.timetable__position
+          .timetable__col-8
+            #timetable.timetable__listblock
+              h2.title.title__h2 Чем сейчас заняты наши постояльцы
+              ul.timetable__list
+                li
+                  .timetable__real Прямо сейчас в пансионате
+                  .timetable__time 7.00 - 10.00
+                  .timetable__info Подъём, термометрия, водные процедуры
+                li
+                  .timetable__real Прямо сейчас в пансионате
+                  .timetable__time 10.00 - 11.00
+                  .timetable__info Завтрак
+                li
+                  .timetable__real Прямо сейчас в пансионате
+                  .timetable__time 11.00 - 13.00
+                  .timetable__info Приём лекарств, свободное время
+                li
+                  .timetable__real Прямо сейчас в пансионате
+                  .timetable__time 13.00 - 14.00
+                  .timetable__info Прогулка на свежем воздухе
+                li
+                  .timetable__real Прямо сейчас в пансионате
+                  .timetable__time 14.00 - 15.00
+                  .timetable__info Обед
+                li
+                  .timetable__real Прямо сейчас в пансионате
+                  .timetable__time 15.00 - 16.30
+                  .timetable__info Тихий час, пешие прогулки, свободное время
+                li
+                  .timetable__real Прямо сейчас в пансионате
+                  .timetable__time 16.30 - 17.00
+                  .timetable__info Полдник
+                li
+                  .timetable__real Прямо сейчас в пансионате
+                  .timetable__time 17.00 - 18.00
+                  .timetable__info Свободное время
+                li
+                  .timetable__real Прямо сейчас в пансионате
+                  .timetable__time 18.00 - 19.00
+                  .timetable__info Водные процедуры
+                li
+                  .timetable__real Прямо сейчас в пансионате
+                  .timetable__time 19.00 - 20.00
+                  .timetable__info Ужин
+                li
+                  .timetable__real Прямо сейчас в пансионате
+                  .timetable__time 20.00 - 22.00
+                  .timetable__info Просмотр фильмов, свободное время
+                li
+                  .timetable__real Прямо сейчас в пансионате
+                  .timetable__time 22.00 - 23.00
+                  .timetable__info Подготовка ко сну, водные процедуры, приём лекарства
+                li
+                  .timetable__real Прямо сейчас в пансионате
+                  .timetable__time 23.00 - 7.00
+                  .timetable__info Ночной сон
+
+              +middle-border('#popup:marquiz_5e943f130dc3f90044dd0a32', 'Получить консультацию', '', '', '')
+    //map
+    section#map.map
+      .container.container__customized
+        .row.map__position
+          .map__card
+            .map__card_frame
+              script(type="text/javascript" charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab5df2fd62d83d51364c018f218048a5989d613840d53dfa4f6e339551e93455c&width=100%25&height=100%&lang=ru_RU&scroll=true")
+            .map__contact
+              h3.title.title__h3 Контактная информация
+              ul
+                li
+                  div
+                    +baloon-white
+                  div
+                    | г. Кемерово, жилой район Пионер Р-255&nbsp;
+                    br
+                    | 245 км, д. 3,  бывш. мотель «Транзит»
+                li
+                  div
+                    +phone-white
+                    a(href='tel:88002000729' title='Позвонить' role='link') 8 (800) 200-07-29&nbsp;
+                  div
+                    +phone-white
+                    a(href='tel:89095193388' title='Позвонить' role='link') 8 (909) 519-33-88
+                li
+                  div
+                    +email-white
+                    a(href='mailto:info@amelia42.ru' title='Обратная связь' role='link') info@amelia42.ru
+                li
+                  div
+                    +clock-white
+                  div
+                    | Ответим на Ваши вопросы&nbsp;
+                    br
+                    span Пн-Вс 09:00-21:00
+
+          .map__text
+            .map__text_wrap
+              p.text.text__small-italic
+                | «Амелия» - это частный дом для престарелых людей,
+                | который станет для пожилого человека вторым домом,
+                | в нем мы создаём атмосферу домашнего уюта
+                | и тёплой заботы. Новый частный двухэтажный загородный пансионат расположен в экологически чистом
+                | пригородном Кемеровском жилом районе Пионер, вдали
+                | от суеты и городского шума.
+              p.text.text__small-italic
+                | Мы готовы принять для проживания в дом престарелых из близлежащих областей и краев: Новосибирской,
+                | Томской, Омской, Алтайского края и Республики Алтай.  Поможем осуществить доставку или проконсультируем
+                | как добраться к нам из Новосибирска, Новокузнецка, Томска, Барнаула или Томска.
+
+    //before-footer
+    section.before-footer
+      .container.container__customized
+        .row.before-footer__position
+          .before-footer__wrapper
+            .before-footer__wrapper_content
+              h2.title.title__h2
+                | Остались вопросы о частном пансионате&nbsp;
+                br
+                | «Амелия» в Кемерово?
+              p.text.text__small
+                | Позвоните нам по телефонам&nbsp;
+                a(href='tel:88002000729' title='Позвонить') 8 800 200 0729&nbsp;
+                | (звонок по России бесплатный)&nbsp;
+                br
+                | или на мобильный&nbsp;
+                a(href='tel:89095193388' title='Позвонить') 8 (909) 519 3388&nbsp;
+                | в рабочие и выходные дни с 09 до 21:00&nbsp;
+                br
+                | или оставьте контактные данные в форме
+
+              +form-vertical('')
+              p.text.text__small
+                | Мы с удовольствием проконсультируем Вас, ответим на все вопросы о проживании&nbsp;
+                br
+                | и расскажем всё о нашем частном доме престарелых&nbsp;
+                br
+                | «Амелия» Кемерово и Кемеровской области
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

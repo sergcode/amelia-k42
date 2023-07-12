@@ -1,0 +1,114 @@
+.conditions {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: $grey-four;
+  position: relative;
+  &__row {
+    justify-content: flex-end;
+  }
+  h2 {
+    text-align: left;
+    padding-bottom: 57px;
+    @media only screen and (max-width: 1599.98px) {
+      font-size: 36px;
+      line-height: 40px;
+    }
+    @media only screen and (max-width: 1279.98px) {
+      padding-bottom: 40px;
+    }
+    @media only screen and (max-width: 1023.98px) {
+      font-size: 30px;
+    }
+    @media only screen and (max-width: 767.98px) {
+      font-size: 24px;
+      text-align: center;
+      padding-bottom: 37px;
+    }
+    br {
+      @media only screen and (max-width: 1279.98px) {
+        display: none;
+      }
+    }
+
+  }
+  &__col-5 {
+    @media only screen and (min-width: 320px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    @media only screen and (min-width: 992px) {
+      flex: 0 0 58.33333%;
+      max-width: 58.33333%;
+    }
+    @media only screen and (min-width: 1600px) {
+      flex: 0 0 41.66667%;
+      max-width: 41.66667%;
+    }
+  }
+  &__col-7 {
+    @media only screen and (min-width: 320px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    @media only screen and (min-width: 992px) {
+      flex: 0 0 41.66667%;
+      max-width: 41.66667%;
+    }
+    @media only screen and (min-width: 1600px) {
+      flex: 0 0 58.33333%;
+      max-width: 58.33333%;
+    }
+  }
+  &__wrapper {
+    padding-top: 76px;
+    padding-bottom: 92px;
+    @media only screen and (max-width: 1279.98px) {
+      padding-top: 60px;
+    }
+    @media only screen and (max-width: 991.98px) {
+      padding-top: 40px;
+      padding-bottom: 50px;
+      order: 2;
+    }
+    .button {
+      @media only screen and (max-width: 991.98px) {
+        margin: auto;
+      }
+    }
+  }
+  &__text {
+    padding-bottom: 42px;
+    @media only screen and (max-width: 991.98px) {
+      padding-bottom: 15px;
+    }
+    p {
+      padding-bottom: 30px;
+    }
+  }
+  &__img {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    @media only screen and (max-width: 991.98px) {
+      height: 560px;
+      order: 1;
+    }
+    @media only screen and (max-width: 767.98px) {
+      height: 444px;
+    }
+    @media only screen and (max-width: 479.98px) {
+      height: 344px;
+    }
+    img {
+      position: absolute;
+      display: flex;
+      margin-left: auto;
+      height: 100%;
+      @media only screen and (max-width: 991.98px) {
+        margin-left: -130px;
+        width: 1000px;
+      }
+    }
+  }
+}

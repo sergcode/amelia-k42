@@ -1,0 +1,167 @@
+.timetable {
+  position: relative;
+  background: $grey-four;
+  padding-bottom: 130px;
+  &__position {
+    justify-content: center;
+
+  }
+  &__col-8 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    margin-top: -18%;
+    z-index: 1;
+    box-shadow: 0 10px 15px $black-rgba-three;
+    @media only screen and (min-width: 1280px) and (max-width: 1599.98px) {
+      margin-top: -25%;
+    }
+    @media only screen and (max-width: 1279.98px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-top: -30%;
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+    @media only screen and (max-width: 991.98px) {
+      margin-top: -40%;
+    }
+    @media only screen and (max-width: 767.98px) {
+      margin-top: -60%;
+    }
+    @media only screen and (max-width: 767.98px) {
+      margin-top: -60%;
+    }
+    &:before {
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 65px;
+      display: block;
+      position: absolute;
+      background: url("#{$way-img}timetable/top.png") repeat-x center;
+      z-index: 0;
+      margin-top: -23px;
+      @media only screen and (max-width: 767.98px) {
+        background: url("#{$way-img}timetable/bottom.png") repeat-x center / cover;
+      }
+    }
+    &:after {
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 65px;
+      display: block;
+      position: absolute;
+      background: url("#{$way-img}timetable/bottom.png") repeat-x center ;
+      z-index: -1;
+      margin-bottom: -40px;
+      @media only screen and (max-width: 767.98px) {
+        background: url("#{$way-img}timetable/bottom.png") repeat-x center / cover;
+      }
+    }
+  }
+  &__listblock {
+    padding: 0 131px 109px;
+    width: 100%;
+    position: relative;
+    background: $white-one;
+    z-index: 10;
+    @media only screen and (max-width: 1023.98px) {
+      padding: 0 93px 109px;
+    }
+    @media only screen and (max-width: 991.98px) {
+      padding: 0 78px 109px;
+    }
+    @media only screen and (max-width: 767.98px) {
+      padding: 0 15px 70px;
+    }
+  }
+  h2 {
+    padding-top: 70px;
+    padding-bottom: 42px;
+  }
+  ul {
+    padding-left: 0;
+    li {
+      display: flex;
+      position: relative;
+      border: 1px dashed transparent;
+      transition: all .3s ease-in-out;
+      padding-left: 38px;
+      line-height: 45px;
+      @media only screen and (max-width: 991.98px) {
+        padding-left: 15px;
+      }
+      @media only screen and (max-width: 767.98px) {
+        align-content: center;
+        align-items: center;
+      }
+      &:nth-child(2n+1) {
+        background: $grey-four;
+      }
+      &.active {
+        border: 1px dashed $green-one;
+        transition: all .3s ease-in-out;
+        background: $white-one;
+        .timetable__real {
+          visibility: visible;
+          opacity: 1;
+          transition: all .3s ease-in-out;
+        }
+      }
+    }
+  }
+  &__time {
+    font-family: $verdana-font;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    max-width: 180px;
+    @media only screen and (max-width: 991.98px) {
+      font-size: 14px;
+      max-width: 140px;
+    }
+    @media only screen and (max-width: 360.98px) {
+      font-size: 14px;
+      max-width: 140px;
+      min-width: 140px;
+    }
+  }
+  &__info {
+    font-family: $verdana-font;
+    font-weight: normal;
+    font-size: 16px;
+    @media only screen and (max-width: 991.98px) {
+      font-size: 14px;
+    }
+    @media only screen and (max-width: 767.98px) {
+      line-height: 1.8em;
+    }
+  }
+  &__real {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 33px;
+    font-size: 12px;
+    color: $green-one;
+    transition: all .3s ease-in-out;
+    line-height: normal;
+    margin-top: -8px;
+    background: $white-one;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .button {
+    margin: 78px auto 0;
+    @media only screen and (max-width: 767.98px) {
+      margin: 40px auto 0;
+    }
+  }
+}

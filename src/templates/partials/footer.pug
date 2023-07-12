@@ -1,0 +1,74 @@
+footer.footer(role='contentinfo')
+  .container.container__customized
+    .row
+      .footer__col_one
+        a(href='/' title='Логотип Амелия' role='banner')
+          +logo-footer
+        ul
+          li &copy;&nbsp;
+            script.
+              var mdate = new Date(); document.write(mdate.getFullYear());
+            | , Все права защищены
+          li ООО «Амелия»
+          li ИНН: 4205382573
+          li КПП: 420501001
+          li ОГРН: 1194205015630
+
+      .footer__col_two.footer__d-flex
+        ul.footer__political
+          li
+            a(href='./docs/politika-konfidentsialnosti.pdf' target='_blank' title='Открыть документ' role='link') Политика конфиденциальности
+          li
+            a(href='./docs/otkaz-ot-otvetstvennosti.pdf' target='_blank' title='Открыть документ' role='link') Отказ от ответственности
+          li
+            a(href='./docs/soglasiye-s-rassylkoy.pdf' target='_blank' title='Открыть документ' role='link') Согласие с рассылкой
+        ul.footer__mt-auto
+          li
+            | Информация, представленная на сайте&nbsp;
+            br
+            | не является публичной офертой
+
+      .footer__col_three.footer__d-flex
+        ul
+          h5 Контактная информация
+          li
+            a(href='tel:88002000729' title='Позвонить' role='link') 8 (800) 200-07-29
+          li
+            a(href='tel:89095193388' title='Позвонить' role='link')
+              | 8 (909) 519-33-88
+            a(href='whatsapp://send?phone=+79095193388' title='' target='_blank' role='link')
+              +whatsapp
+        ul.footer__mt-auto
+          h5 Напишите нам
+          li
+            a(href='mailto:info@amelia42.ru' title='' role='link') info@amelia42.ru
+
+      .footer__col_four.footer__d-flex
+        ul.footer__social-networks
+          h5 Мы в социальных сетях
+          li
+            a(href='https://vk.com/amelia42' title='Перейти в группу ВКонтакте' role='link')
+              +vk
+            a(href='https://ok.ru/group/57375530746062' title='Перейти в Одноклассники' role='link')
+              +ok
+            a(href='https://www.instagram.com/tatiana_amelia42/?hl=ru' title='Перейти в Instagram' role='link')
+              +instagram
+            a(href='https://www.facebook.com/groups/amelia42/' title='Перейти в Facebook' role='link')
+              +facebook
+
+        a.button.button__middle.button__middle_border(href='#popup:marquiz_5e943f130dc3f90044dd0a32' title='' target='_blank' role='button')
+          span Бесплатная&nbsp;
+          span консультация
+          span Консультация
+          +arrow-green-right
+
++modal-success
+
++modal-unsuccess
+
++stocks
+
++customer-retention
+
+include ../../templates/includes/footer-scripts
+

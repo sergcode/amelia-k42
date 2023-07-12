@@ -1,0 +1,90 @@
+.services {
+  padding-top: 100px;
+  background: $grey-four;
+  padding-bottom: 0;
+  @media only screen and (max-width: 1599.98px) {
+    padding-top: 50px;
+  }
+  @media only screen and (max-width: 767.98px) {
+    padding-top: 150px;
+  }
+  @media only screen and (max-width: 575.98px) {
+    padding-top: 150px;
+  }
+  @media only screen and (max-width: 528.98px) {
+    padding-top: 200px;
+  }
+  @media only screen and (max-width: 400px) {
+    padding-top: 250px;
+  }
+  @media only screen and (max-width: 350px) {
+    padding-top: 60px;
+  }
+  .container {
+    padding-bottom: 82px;
+    @media only screen and (min-width: 0px) and (max-width: 991.98px) {
+      background: none;
+    }
+    @media only screen and (min-width: 992px) and (max-width: 1023.98px) {
+      background: url("#{$way-img}services/services-bg.png") no-repeat right bottom / 526px;
+    }
+    @media only screen and (min-width: 1024px) and (max-width: 1279.98px) {
+      background: url("#{$way-img}services/services-bg.png") no-repeat right bottom / 562px;
+    }
+    @media only screen and (min-width: 1280px) and (max-width: 1599.98px) {
+      background: url("#{$way-img}services/services-bg.png") no-repeat right bottom / 461px;
+    }
+    @media only screen and (min-width: 1600px) {
+      background: url("#{$way-img}services/services-bg.png") no-repeat right bottom / 616px;
+    }
+  }
+  &__col {
+    margin-bottom: 70px;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    @media only screen and (min-width: 0px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    @media only screen and (min-width: 480px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    @media only screen and (min-width: 1024px) {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
+    @media only screen and (min-width: 1280px) {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
+    @media only screen and (min-width: 1600px) {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+  }
+  article {
+    svg {
+      margin-bottom: 28px;
+      height: 50px;
+    }
+    figure {
+      @media only screen and (max-width: 479.98px) {
+        text-align: center;
+      }
+    }
+  }
+  .button {
+    @media only screen and (min-width: 280px) and (max-width: 1023.98px) {
+      margin: auto;
+    }
+    @media only screen and (min-width: 1024px) and (max-width: 1279.98px) {
+      margin: 0;
+    }
+    @media only screen and (min-width: 1280px) and (max-width: 1599.98px) {
+      margin: auto;
+    }
+  }
+}

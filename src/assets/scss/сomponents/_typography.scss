@@ -1,0 +1,188 @@
+.title {
+  font-family: $philosopher-font;
+  font-weight: bold;
+  &__h1 {
+    font-size: 60px;
+    padding-bottom: 40px;
+    display: block;
+    width: 100%;
+    line-height: 80px;
+    text-transform: uppercase;
+    @media only screen and (max-width: 1599.98px) {
+      font-size: 55px;
+      line-height: 70px;
+      padding-bottom: 30px;
+    }
+    @media only screen and (max-width: 1279.98px) {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    @media only screen and (max-width: 767.98px) {
+      font-size: 40px;
+      line-height: 60px;
+    }
+    @media only screen and (max-width: 479.98px) {
+      font-size: 30px;
+      line-height: 50px;
+      text-align: center;
+    }
+    @media only screen and (max-width: 310.98px) {
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }
+
+  &__h2 {
+    line-height: 40px;
+    font-size: 36px;
+    padding-bottom: 86px;
+    text-align: center;
+    color: $grey-two;
+    @media only screen and (max-width: 1599.98px) {
+      font-size: 40px;
+    }
+    @media only screen and (max-width: 1279.98px) {
+      font-size: 36px;
+    }
+    @media only screen and (max-width: 1023.98px) {
+      font-size: 30px;
+      padding-bottom: 60px;
+    }
+    @media only screen and (max-width: 767.98px) {
+      font-size: 24px;
+    }
+  }
+
+  &__h3 {
+    line-height: 40px;
+    font-size: 30px;
+    padding-bottom: 35px;
+    @media only screen and (min-width: 1280px) and (max-width: 1599.98px) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+    @media only screen and (max-width: 1279.98px) {
+      font-size: 24px;
+      line-height: 27px;
+    }
+    @media only screen and (max-width: 767.98px) {
+      font-size: 20px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__h4 {
+    line-height: 40px;
+    font-size: 40px;
+  }
+
+  &__h5 {
+
+  }
+
+  &__h6 {
+    font-family: $verdana-font;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    @media only screen and (max-width: 1279.98px) {
+      font-size: 17px;
+    }
+  }
+
+  &__small {
+    font-size: 19.51px;
+  }
+
+  &_white {
+    color: $white-one;
+  }
+
+  &__grey {
+
+    &_one {
+      color: $grey-one;
+    }
+
+  }
+
+  &_center {
+
+    text-align: center;
+    justify-content: center;
+
+  }
+
+  &_right {
+
+    text-align: right;
+    justify-content: flex-end;
+
+  }
+
+  &_left {
+
+    text-align: left;
+    justify-content: flex-start;
+
+  }
+
+  &_uppercase {
+    text-transform: uppercase;
+  }
+
+}
+
+.text {
+  font-family: $verdana-font;
+  font-weight: 300;
+  line-height: 25px;
+  color: $grey-two;
+  &__littel {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  &__small {
+    font-size: 16px;
+    font-weight: 500;
+    @media only screen and (max-width: 1279.98px) {
+      font-size: 14px;
+    }
+  }
+  &__small-italic {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    @media only screen and (max-width: 1599.98px) {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    @media only screen and (max-width: 1279.98px) {
+      font-size: 14px;
+    }
+    @media only screen and (max-width: 767.98px) {
+      font-size: 12px;
+    }
+  }
+  &__small-bold {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &__small-bold {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &__middle {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__middle-big {
+    font-size: 24px;
+    font-weight: normal;
+  }
+  &__big {
+    font-size: 36px;
+    font-weight: bold;
+  }
+}
+
